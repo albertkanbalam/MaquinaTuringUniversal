@@ -238,7 +238,7 @@ class MaquinaTuringUniversal:
         transición para el par(estado, símbolo) que se está leyendo.
         '''
         cadena_entrada = self.cadena
-        print("  Cadena a procesar: {}\n\n".format(cadena_entrada))
+        print("  CADENA A PROCESAR: {}\n\n".format(cadena_entrada))
         self.escribe_cinta(cadena_entrada)
         self.muestra_instantanea()
         print("\n\n  Presionar ENTER para mostrar configuraciones\n\n")

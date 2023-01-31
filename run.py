@@ -12,17 +12,17 @@ from turing import MaquinaTuringUniversal
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("\n  - Ingresar como parámetro el nombre del archivo")
-        print("    que contiene la descripción de la Máquina de Turing\n")
+        print("\n  - INGRESAR COMO PARÁMETROS EL NOMBRE DEL ARCHIVO")
+        print("  QUE CONTIENE LA DESCRIPCION DE LA MAQUINA DE TURING\n")
         sys.exit()
 
     if not os.path.isfile('descripciones/' + sys.argv[1]):
-        print("\n  - No existe el archivo {}\n".format(sys.argv[1]))
+        print("\n  - NO EXISTE EL ARCHIVO {}\n".format(sys.argv[1]))
         sys.exit()
     try:
         archivo_mt = json.load(open('descripciones/' + sys.argv[1], 'r'))
     except Exception as ex:
-        print("  - El archivo {} está mal formado".format(sys.argv[1]))
+        print("  - EL ARCHIVO {} ESTA MAL FORMADO".format(sys.argv[1]))
         print(ex)
         sys.exit()
 
