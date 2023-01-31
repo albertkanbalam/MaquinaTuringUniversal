@@ -17,7 +17,7 @@ if __name__ == "__main__":
         sys.exit()
 
     if not os.path.isfile('descripciones/' + sys.argv[1]):
-        print("\n  - No existe el archivo {}\n".format(sys.argv[1]))
+        print("\n  - No existe archivo {}\n".format(sys.argv[1]))
         sys.exit()
     try:
         archivo_mt = json.load(open('descripciones/' + sys.argv[1], 'r'))
