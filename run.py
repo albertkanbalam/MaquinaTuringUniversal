@@ -17,12 +17,12 @@ if __name__ == "__main__":
         sys.exit()
 
     if not os.path.isfile('descripciones/' + sys.argv[1]):
-        print("\n  - NO EXISTE EL ARCHIVO {}\n".format(sys.argv[1]))
+        print(f"\n  - NO EXISTE EL ARCHIVO {sys.argv[1]} \n")
         sys.exit()
     try:
         archivo_mt = json.load(open('descripciones/' + sys.argv[1], 'r'))
     except Exception as ex:
-        print("  - EL ARCHIVO {} ESTA MAL FORMADO".format(sys.argv[1]))
+        print(f"\n EL ARCHIVO {sys.argv[1]} ESTA MAL FORMADON \n")
         print(ex)
         sys.exit()
 
