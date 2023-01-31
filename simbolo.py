@@ -28,8 +28,8 @@ class Simbolo:
     def atomos_representacion_cadena(self):
         cadena = '('
         for e in self.atomos[:-1]:
-            cadena = cadena + "{}, ".format(e)
-        cadena = cadena + "{})".format(self.atomos[-1])
+            cadena = cadena + f"{e}, "
+        cadena = cadena + f"{self.atomos[-1]})"
         return cadena
 
     def first(self):
