@@ -22,7 +22,7 @@ if __name__ == "__main__":
     try:
         archivo_mt = json.load(open('descripciones/' + sys.argv[1], 'r'))
     except Exception as ex:
-        print("  - LE ARCHIVO {} ESTA MAL FORMADO".format(sys.argv[1]))
+        print("  - EL ARCHIVO {} ESTA MAL FORMADO".format(sys.argv[1]))
         print(ex)
         sys.exit()
 
