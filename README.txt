@@ -51,5 +51,5 @@ Consideraciónes:
 	      - 'Mww.json' (con 2 pistas), que reconoce el lenguaje {ww}.
 	      - 'M0n1n.json' (con 6 pistas), que reconoce el lenguaje {0^n1^n}.
 
-  # HOLA A TODOS
+  # HOLA A ALAN
 
