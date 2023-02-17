@@ -1,4 +1,4 @@
-descripcion = {
+descripciones = {
     "Estados": ["q0", "q1", "q2", "q3", "q4", "q5"],
     "Entrada": ["A", "B"],
     "Cinta": ["A", "B", "_", "X", "Y"],

@@ -255,3 +255,5 @@ class MaquinaTuringUniversal:
         print("\n\n\n  Cadena \"{}\" aceptada.".format(cadena_entrada))
         print("  {} transiciones\n\n".format(self.contador_transiciones))
         return True
+
+  

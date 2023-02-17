@@ -5,7 +5,7 @@ de una Máquina de Turing y la ejecuta.
 """
 import os
 import sys
-import json
+from importlib.machinery import SourceFileLoader
 
 from turing import MaquinaTuringUniversal
 
@@ -20,7 +20,8 @@ if __name__ == "__main__":
         print(f"\n  - NO EXISTE EL ARCHIVO {sys.argv[1]} \n")
         sys.exit()
     try:
-        archivo_mt = json.load(open('descripciones/' + sys.argv[1], 'r'))
+        my_module = SourceFileLoader('descripcion', 'descripciones/' + sys.argv[1]).load_module()
+        archivo_mt = my_module.descripcion
     except Exception as ex:
         print(f"\n EL ARCHIVO {sys.argv[1]} ESTA MAL FORMADON \n")
         print(ex)
