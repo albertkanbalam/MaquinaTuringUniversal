@@ -1,4 +1,4 @@
-descripcionG={
+descripcion = {
     "Estados": ["q0", "qA", "qB", "qC"],
     "Entrada": [ "a", "b" ],
     "Cinta": [ ["a"] , ["b"], ["_"], ["X"]],
