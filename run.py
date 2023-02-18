@@ -14,7 +14,8 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("\n  - INGRESAR COMO PARÁMETROS EL NOMBRE DEL ARCHIVO")
         print("  QUE CONTIENE LA DESCRIPCION DE LA MAQUINA DE TURING\n")
-        sys.exit()
+        archivo_mt = input()
+        #sys.exit()
 
     if not os.path.isfile('descripciones/' + sys.argv[1]):
         print(f"\n  - NO EXISTE EL ARCHIVO {sys.argv[1]} \n")
