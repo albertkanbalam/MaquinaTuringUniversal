@@ -21,8 +21,12 @@ class MaquinaTuringUniversal:
 
     def __init__(self, descripcion_mt, cadena):
 
+        print(descripcion_mt,'a ver que hay aqui')
         self.MT = descripcion_mt
+        print(self.MT,"holaaqui")
+        print(self.MT.readlines(),"aca lee el diccionario")
         self.cadena = cadena
+        print(self.cadena,"cadena")
         self.estado_inicial = self.MT['Inicial']
         self.estados_finales = self.MT['Finales']
         self.blanco = self.MT['Blanco']
